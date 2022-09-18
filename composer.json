@@ -1,0 +1,52 @@
+{
+    "name": "laravolt/crud",
+    "description": "Base functionality for CRUD operation",
+    "keywords": [
+        "laravel",
+        "laravolt",
+        "crud"
+    ],
+    "homepage": "https://github.com/laravolt/crud",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bayu Hendra Winata",
+            "email": "bayu.hendra@javan.co.id",
+            "homepage": "https://laravolt.dev"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "illuminate/database": "^9.0",
+        "illuminate/support": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laravolt\\Crud\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laravolt\\Crud\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Laravolt\\Crud\\CrudServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.22"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
